@@ -85,3 +85,24 @@ function showTime(){
 }
 
 showTime();
+
+//onload page overlay
+const popup = document.querySelector('.popup');
+const close = document.querySelector('#close');
+const overlay = document.querySelector('.overlay-popup');
+
+window.onload = function(){
+    setTimeout(function(){
+        popup.style.display = "block";
+        overlay.style.display = "block";
+    }, 1000)
+}
+close.addEventListener('click',()=>{
+    popup.style.display = "none";
+    overlay.style.display = "none";
+})
+
+exit.onclick = function(){
+    signin.style.display = "none";
+    signinpop.style.display = "none";
+}

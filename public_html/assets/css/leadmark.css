@@ -75,6 +75,44 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
+body .overlay-popup {
+  position: fixed;
+  height: 10000%;
+  width: 100%;
+  background: #191919;
+  opacity: 95%;
+  z-index: 10;
+  display: none;
+  top: -10vh; }
+body .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100; }
+body .contentBox {
+  display: none;
+  position: relative;
+  width: 600px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+body #close {
+  position: absolute;
+  top: -20px;
+  right: 100%;
+  color: #f3f3f1; }
+body .welcome h3{
+  color: #fff;
+}
+body #close:hover {
+  cursor: pointer; }
+
+body .welcome {
+  position: relative;
+  display: inline-block; }
 
 hr {
   box-sizing: content-box;
